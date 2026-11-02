@@ -299,6 +299,11 @@ diagnostic:
   - {name: SSRDC, comment: Clear-sky downward surface solar radiation}
   - {name: STRDC, comment: Claer-sky downward surface thermal radiation}
   - {name: BLH, comment: Height of boundary layer}
+  - {name: WDIRBLH, comment: Wind direction at boundary layer height}
+  - {name: UBLH, comment: U wind at Height of boundary layer}
+  - {name: VBLH, comment: V wind at Height of boundary layer}
+  - {name: WTURNBLH, comment: Wind turning in boundary layer}
+  - {name: MFBLH, comment: Cross isobaric mass flux in boundary layer}
   - {name: SUND, comment: Sunshine duration}
   - {name: SPAR, comment: Surface downward PARadiation}
   - {name: SUVB, comment: Surface downward UV-B radiation}

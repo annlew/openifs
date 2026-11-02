@@ -405,6 +405,11 @@ TYPE(FPDSPHY) :: CHEMDDFLX(JPOSCHEMFLX)! Wet deposition flux chemical fields
 TYPE(FPDSPHY) :: SUND                 ! Sunshine duration (ECMWF)
 TYPE(FPDSPHY) :: CHAR                 ! Charnock parameter (ECMWF)
 TYPE(FPDSPHY) :: BLH                  ! Height of boundary layer (ECMWF)
+TYPE(FPDSPHY) :: WDIRBLH              ! Wind direction at Height of boundary layer 
+TYPE(FPDSPHY) :: UBLH                 ! U wind at Height of boundary layer 
+TYPE(FPDSPHY) :: VBLH                 ! V wind at Height of boundary layer 
+TYPE(FPDSPHY) :: WTURNBLH             ! Wind turning in boundary layer 
+TYPE(FPDSPHY) :: MFBLH                ! Cross isobaric mass flux in boundary layer 
 TYPE(FPDSPHY) :: BV                   ! Budget values
 TYPE(FPDSPHY) :: TCLW                 ! Total column liquid water
 TYPE(FPDSPHY) :: TCIW                 ! Total column ice water

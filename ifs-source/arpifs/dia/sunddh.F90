@@ -570,7 +570,7 @@ IF (LECMWF) THEN
 !      number of free-style variables
 ! GHG fields included in DDH if present (if NGHG/=0)
 
-  NDHVFS = 37 + NGHG + NACTAERO
+  NDHVFS = 42 + NGHG + NACTAERO
 
 ELSE
 

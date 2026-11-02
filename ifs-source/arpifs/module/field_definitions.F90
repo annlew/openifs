@@ -427,6 +427,11 @@ type, extends(field_access_base) :: field_access
    real(kind=jprb), pointer :: vd_ssrdc(:) => null() 
    real(kind=jprb), pointer :: vd_strdc(:) => null() 
    real(kind=jprb), pointer :: vd_blh(:) => null() 
+   real(kind=jprb), pointer :: vd_wdirblh(:) => null() 
+   real(kind=jprb), pointer :: vd_ublh(:) => null() 
+   real(kind=jprb), pointer :: vd_vblh(:) => null() 
+   real(kind=jprb), pointer :: vd_wturnblh(:) => null() 
+   real(kind=jprb), pointer :: vd_mfblh(:) => null() 
    real(kind=jprb), pointer :: vd_sund(:) => null() 
    real(kind=jprb), pointer :: vd_spar(:) => null() 
    real(kind=jprb), pointer :: vd_suvb(:) => null() 
@@ -978,6 +983,11 @@ integer(kind=jpim) :: vd_strd=3071
 integer(kind=jpim) :: vd_ssrdc=3072 
 integer(kind=jpim) :: vd_strdc=3073 
 integer(kind=jpim) :: vd_blh=3074 
+integer(kind=jpim) :: vd_wdirblh=3156 
+integer(kind=jpim) :: vd_ublh=3157 
+integer(kind=jpim) :: vd_vblh=3158 
+integer(kind=jpim) :: vd_wturnblh=3159 
+integer(kind=jpim) :: vd_mfblh=3160 
 integer(kind=jpim) :: vd_sund=3075 
 integer(kind=jpim) :: vd_spar=3076 
 integer(kind=jpim) :: vd_suvb=3077 
@@ -1562,6 +1572,11 @@ call set_fvar(metadata,fid%vd_strd,'vd_strd',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_ssrdc,'vd_ssrdc',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_strdc,'vd_strdc',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_blh,'vd_blh',1,d2none,'',30)
+call set_fvar(metadata,fid%vd_wdirblh,'vd_wdirblh',1,d2none,'',30)
+call set_fvar(metadata,fid%vd_ublh,'vd_ublh',1,d2none,'',30)
+call set_fvar(metadata,fid%vd_vblh,'vd_vblh',1,d2none,'',30)
+call set_fvar(metadata,fid%vd_wturnblh,'vd_wtunrblh',1,d2none,'',30)
+call set_fvar(metadata,fid%vd_mfblh,'vd_mfblh',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_sund,'vd_sund',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_spar,'vd_spar',1,d2none,'',30)
 call set_fvar(metadata,fid%vd_suvb,'vd_suvb',1,d2none,'',30)
@@ -2527,6 +2542,16 @@ case(fid%vd_strdc)
   this%vd_strdc  => z1d
 case(fid%vd_blh)
   this%vd_blh  => z1d
+case(fid%vd_wdirblh)
+  this%vd_wdirblh  => z1d
+case(fid%vd_ublh)
+  this%vd_ublh  => z1d
+case(fid%vd_vblh)
+  this%vd_vblh  => z1d
+case(fid%vd_wturnblh)
+  this%vd_wturnblh  => z1d
+case(fid%vd_mfblh)
+  this%vd_mfblh  => z1d
 case(fid%vd_sund)
   this%vd_sund  => z1d
 case(fid%vd_spar)

@@ -549,6 +549,11 @@ TYPE TYPE_SFL_VDIAG
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YSSRDC    =>NULL() ! Clear-sky downward surface solar radiation
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YSTRDC    =>NULL() ! Claer-sky downward surface thermal radiation
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YBLH      =>NULL() ! Height of boundary layer
+  TYPE(TYPE_SURF_MTL_2D), POINTER :: YWDIRBLH  =>NULL() ! Wind direction at Height of boundary layer
+  TYPE(TYPE_SURF_MTL_2D), POINTER :: YUBLH     =>NULL() ! U Wind at Height of boundary layer
+  TYPE(TYPE_SURF_MTL_2D), POINTER :: YVBLH     =>NULL() ! V Wind at Height of boundary layer
+  TYPE(TYPE_SURF_MTL_2D), POINTER :: YWTURNBLH =>NULL() ! Wind turning in boundary layer
+  TYPE(TYPE_SURF_MTL_2D), POINTER :: YMFBLH    =>NULL() ! Cross isobaric mass flux in boundary layer
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YSUND     =>NULL() ! Sunshine duration
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YSPAR     =>NULL() ! Surface downward PARadiation
   TYPE(TYPE_SURF_MTL_2D), POINTER :: YSUVB     =>NULL() ! Surface downward UV-B radiation
